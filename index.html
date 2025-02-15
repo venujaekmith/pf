@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm Venuja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="terminal">
+      <div class="env-info">
+        <div class="env-item" id="current-datetime">Fetching date & time...</div>
+      </div>
+      <div class="code-output"></div>
+      <div class="cursor-line"><span class="cursor">|</span></div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><span style="color: green;">Venuja_s</span><span class="cur">|</span></div>
+      <ul class="nav-links">
+        <li><a href="https://www.linkedin.com/in/venuja-ekmith-720917254/" style="font-size: 24px;"> <i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://wa.me/qr/U37IGNUE6PGPK1" style="font-size: 24px;"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="https://github.com/venujaekmith" style="font-size: 24px;"><i class="fab fa-github"></i></a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="welcome-section" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('i.jpg') center/cover no-repeat">
+    <div class="welcome-content" >
+        <h1>...</h1>
+      <h1 style="margin-top: 3rem;">Welcome to My Env !</h1>
+      <p>Take some time, surf the web and collect more data about me</p>
+      <a onclick="openModal()" class="cta-btn">Load More</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <img src="v.png" alt="Profile Picture" class="profile-image">
+        <div class="about-text">
+          <h2>I'm</h2>
+          <p><span style="color: green;">Venuja Ekmith</span>, a Full-Stack Developer with expertise in mordern technologies. Passionate about technology, artificial intelligence, data science, and mathematics, I'm constantly seeking opportunities to expand my knowledge and challenge the boundaries of what's possible. My curiosity drives me to explore emerging trends and future technologies, with a vision of creating impactful, innovative solutions to make human life better in future..</p>
+          <p>When I'm not coding, you can find me exploring new technologies or enjoying a good cup of coffee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--projects Section -->
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <h2 style="margin-bottom: 20px;" style="color: green;"><span style="color: green;">My Projects</span></h2>
+      <div class="achievement-grid">
+        <div class="achievement-item">
+          <h3>Imager AI</h3>
+          <p>This is an app which uses ai to get the most relevant images while you are talking.</p>
+        </div>
+        <div class="achievement-item">
+          <h3>The Bus Route</h3>
+          <p>My first Web app developed by me to find the best buses to travel from one place to another.</p>
+        </div>
+        <div class="achievement-item">
+          <h3>Finance bot</h3>
+          <p>This will help you to manage your personal finance in your day to day life.</p>
+        </div>
+        <div class="achievement-item">
+          <h3>Best Developer Award</h3>
+          <p>Awarded for outstanding performance in software development.</p>
+        </div>
+        <div class="achievement-item">
+          <h3>Open Source Contributor</h3>
+          <p>Contributed to multiple open-source projects on GitHub.</p>
+        </div>
+        <div class="achievement-item">
+          <h3>Certified Full Stack Developer</h3>
+          <p>Certified for full-stack development skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <h2 style="margin-bottom: 20px;" style="color: green;"><span style="color: green;">[INFO] There is more to come soon</span><span class="cur" style="color: green;">|</span></h2>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('k.jpg') center/cover no-repeat">
+    <div class="container">
+      <center><h2>Contact Me</h2></center><br>
+      <div class="contact-content" >
+        <form class="contact-form" action="mailto:venuja.ekmith@gmail.com" style="width: 80%;">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        
+      </div>
+    </div>
+  </section>
+
+<!--modals-->
+<div id="terminal-modal" class="modal">
+  <div class="terminal-header">
+    <span>Terminal</span>
+    <div class="buttons">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="terminal-body" id="terminal-body">
+    <h4>[INFO] There is more to come soon</h4>
+    <h4>Type "OK" to close this modal.</h4>
+  </div>
+  <div class="terminal-input">
+    <input type="text" id="terminal-input" placeholder="Enter command..." />
+    <button onclick="closeModal()">Enter</button>
+  </div>
+</div>
+
+<div id="terminal-modal1" class="modal">
+  <div class="terminal-header">
+    <span>Terminal</span>
+    <div class="buttons">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="terminal-body" id="terminal-body">
+    <h4>Welcome to my env !</h4>
+    <h4>Type "hello" to surf my website!. <br>[INFO] There is more to come soon</h4>
+  </div>
+  <div class="terminal-input">
+    <input type="text" id="terminal-input1" placeholder="Enter command..." />
+    <button onclick="closeModal1()">Enter</button>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-media">
+      <h3>Connect with Me</h3>
+      <ul style="align-items: left;">
+        <li><a href="https://github.com/venujaekmith" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/venuja-ekmith-720917254/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://wa.me/qr/U37IGNUE6PGPK1" target="_blank">WhatsApp</a></li>
+        <li><a href="mailto:venuja.ekmith@gmail.com">Email</a></li>
+      </ul>
+    </div><br><br>
+    <div class="container">
+      <p>&copy; 2025 Venuja Ekmith. All rights reserved.</p>
+    </div>
+    
+  </footer>
+</body>
+</html>
