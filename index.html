@@ -28,7 +28,6 @@
         <li><a href="https://www.linkedin.com/in/venuja-ekmith-720917254/" style="font-size: 24px;"> <i class="fab fa-linkedin"></i></a></li>
         <li><a href="https://wa.me/qr/U37IGNUE6PGPK1" style="font-size: 24px;"><i class="fab fa-whatsapp"></i></a></li>
         <li><a href="https://github.com/venujaekmith" style="font-size: 24px;"><i class="fab fa-github"></i></a></li>
-        
       </ul>
     </div>
   </nav>
@@ -57,43 +56,68 @@
     </div>
   </section>
 
-  <!--projects Section -->
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 style="margin-bottom: 20px; color: green;">My Projects<span class="cur">|</span></h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <img src="statics\imgai.jpeg" alt="Imager AI" class="project-image" onclick="openImageModal('statics/imgai.jpeg')">
+          <h3>Imager AI</h3>
+          <p>This AI-powered application, built with Python, revolutionizes the way demonstrations are presented. Simply start the app and begin speaking—within moments, it will fetch the most relevant images, graphs, and details to enhance your explanation. Designed for speed and accuracy, this innovative tool ensures seamless, real-time visualization, making presentations more engaging and effective.</p>
+        </div>
+        <div class="project-item">
+          <img src="statics\bus.jpeg" alt="The Bus Route" class="project-image" onclick="openImageModal('statics/bus.jpeg')">
+          <h3>The Bus Route</h3>
+          <p>Ever struggled to find the right bus when traveling? I’ve built a Django web app that makes it easy to locate relevant bus numbers by simply entering your starting point and destination!</p>
+        </div>
+        <div class="project-item">
+          <img src="statics\fintrack.png" alt="Finance Bot" class="project-image" onclick="openImageModal('statics/fintrack.png')">
+          <h3>FinTrack</h3>
+          <p>Take control of your money with FinTrack, the ultimate personal finance app designed to simplify budgeting, track expenses, and help you achieve your financial goals. Whether you're managing daily spending, planning savings, or analyzing financial habits, FinTrack gives you a clear, real-time overview of your finances – all in one place.</p>
+        </div>
+        <div class="project-item">
+          <img src="statics\lms.png" alt="Finance Bot" class="project-image" onclick="openImageModal('statics/lms.png')">
+          <h3>NexusLearn</h3>
+          <p>NexusLearn is a powerful, all-in-one Learning Management System (LMS) built to transform the way students learn and educators teach. Designed for schools, institutes, and training programs, NexusLearn offers a seamless digital learning experience that’s interactive, intuitive, and impactful.</p>
+        </div>
+        <div class="project-item">
+          <img src="statics\minemarks.png" alt="Finance Bot" class="project-image" onclick="openImageModal('statics/minemarks.png')">
+          <h3>Minemarks</h3>
+          <p>MineMarks is a dynamic web platform designed to help students, teachers, and parents analyze academic performance with ease. By simply entering your marks, MineMarks instantly generates detailed insights, trends, and personalized feedback to help you understand strengths, identify areas for improvement, and plan your next steps smarter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
   <section id="achievements" class="achievements-section">
     <div class="container">
-      <h2 style="margin-bottom: 20px;" style="color: green;"><span style="color: green;">My Projects</span></h2>
+      <h2 style="margin-bottom: 20px; color: green;">My Achievements<span class="cur">|</span></h2>
       <div class="achievement-grid">
         <div class="achievement-item">
-          <h3>Imager AI</h3>
-          <p>This is an app which uses ai to get the most relevant images while you are talking.</p>
+          <h3>Best Innovative Application</h3>
+          <p>Awarded for Best Innovative Application in Innosphere 2024 for ImagerAI app</p>
         </div>
         <div class="achievement-item">
-          <h3>The Bus Route</h3>
-          <p>My first Web app developed by me to find the best buses to travel from one place to another.</p>
+          <h3>Best Innovative Developer</h3>
+          <p>Awarded for best Innovative developer Novustechinca 2024 for ImagerAI app</p>
         </div>
         <div class="achievement-item">
-          <h3>Finance bot</h3>
-          <p>This will help you to manage your personal finance in your day to day life.</p>
-        </div>
-        <div class="achievement-item">
-          <h3>Best Developer Award</h3>
-          <p>Awarded for outstanding performance in software development.</p>
-        </div>
-        <div class="achievement-item">
-          <h3>Open Source Contributor</h3>
-          <p>Contributed to multiple open-source projects on GitHub.</p>
-        </div>
-        <div class="achievement-item">
-          <h3>Certified Full Stack Developer</h3>
-          <p>Certified for full-stack development skills.</p>
+          <h3>
+            Silver medalist in SLPO</h3>
+          <p>
+            Silver medalist in Sri Lankan Physics Olympiad Competition held at university of Colombo</p>
         </div>
       </div>
     </div>
   </section>
   <section id="achievements" class="achievements-section">
     <div class="container">
-      <h2 style="margin-bottom: 20px;" style="color: green;"><span style="color: green;">[INFO] There is more to come soon</span><span class="cur" style="color: green;">|</span></h2>
+      <h2 style="margin-bottom: 20px; color: green;"><span style="color: green;">[INFO] There is more to come soon</span><span class="cur" style="color: green;">|</span></h2>
     </div>
   </section>
+
   <!-- Contact Section -->
   <section id="contact" class="contact-section" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('k.jpg') center/cover no-repeat">
     <div class="container">
@@ -105,50 +129,54 @@
           <textarea placeholder="Your Message" rows="5" required></textarea>
           <button type="submit">Send Message</button>
         </form>
-        
       </div>
     </div>
   </section>
 
-<!--modals-->
-<div id="terminal-modal" class="modal">
-  <div class="terminal-header">
-    <span>Terminal</span>
-    <div class="buttons">
-      <div></div>
-      <div></div>
-      <div></div>
+  <!-- Modals -->
+  <div id="terminal-modal" class="modal">
+    <div class="terminal-header">
+      <span>Terminal</span>
+      <div class="buttons">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+      <h4>[INFO] There is more to come soon</h4>
+      <h4>Type "OK" to close this modal.</h4>
+    </div>
+    <div class="terminal-input">
+      <input type="text" id="terminal-input" placeholder="Enter command..." />
+      <button onclick="closeModal()">Enter</button>
     </div>
   </div>
-  <div class="terminal-body" id="terminal-body">
-    <h4>[INFO] There is more to come soon</h4>
-    <h4>Type "OK" to close this modal.</h4>
-  </div>
-  <div class="terminal-input">
-    <input type="text" id="terminal-input" placeholder="Enter command..." />
-    <button onclick="closeModal()">Enter</button>
-  </div>
-</div>
 
-<div id="terminal-modal1" class="modal">
-  <div class="terminal-header">
-    <span>Terminal</span>
-    <div class="buttons">
-      <div></div>
-      <div></div>
-      <div></div>
+  <div id="terminal-modal1" class="modal">
+    <div class="terminal-header">
+      <span>Terminal</span>
+      <div class="buttons">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+      <h4>Welcome to my env !</h4>
+      <h4>Type "hello" to surf my website!. <br>[INFO] There is more to come soon</h4>
+    </div>
+    <div class="terminal-input">
+      <input type="text" id="terminal-input1" placeholder="Enter command..." />
+      <button onclick="closeModal1()">Enter</button>
     </div>
   </div>
-  <div class="terminal-body" id="terminal-body">
-    <h4>Welcome to my env !</h4>
-    <h4>Type "hello" to surf my website!. <br>[INFO] There is more to come soon</h4>
-  </div>
-  <div class="terminal-input">
-    <input type="text" id="terminal-input1" placeholder="Enter command..." />
-    <button onclick="closeModal1()">Enter</button>
-  </div>
-</div>
 
+  <!-- Image Preview Modal -->
+  <div id="image-modal" class="image-modal">
+    <span class="close-image-modal" onclick="closeImageModal()">&times;</span>
+    <img id="full-image" src="" alt="Full Project Image" class="full-image">
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -158,13 +186,12 @@
         <li><a href="https://github.com/venujaekmith" target="_blank">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/venuja-ekmith-720917254/" target="_blank">LinkedIn</a></li>
         <li><a href="https://wa.me/qr/U37IGNUE6PGPK1" target="_blank">WhatsApp</a></li>
-        <li><a href="mailto:venuja.ekmith@gmail.com">Email</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#fdcbd8d3c8d7dc93d8d6d0d4c9d5fddad0dcd4d193ded2d0">Email</a></li>
       </ul>
     </div><br><br>
     <div class="container">
       <h4>&copy; 2025 Venuja Ekmith. All rights reserved.</h4>
     </div>
-    
   </footer>
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'934a9e868b797ba8',t:'MTc0NTM4MjU1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
